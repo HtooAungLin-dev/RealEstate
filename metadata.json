@@ -1,0 +1,6 @@
+{
+  "name": "RealEstate Boss Singapore",
+  "description": "Singapore's leading property portal for condos, HDB flats, landed houses, commercial spaces, real-time map search, live bank mortgage calculator, side-by-side property comparison, saved search alerts, multi-language display, and direct agent messaging.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

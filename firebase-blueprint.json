@@ -1,0 +1,82 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile with saved properties and preferences",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "email"]
+    },
+    "SavedSearch": {
+      "title": "SavedSearch",
+      "description": "Saved search criteria for automated property alerts",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "purpose": { "type": "string" },
+        "propertyType": { "type": "string" },
+        "minPrice": { "type": "number" },
+        "maxPrice": { "type": "number" },
+        "bedrooms": { "type": "string" },
+        "location": { "type": "string" },
+        "frequency": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "title", "createdAt"]
+    },
+    "ChatMessage": {
+      "title": "ChatMessage",
+      "description": "Direct message inquiry between user and property agent",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "agentId": { "type": "string" },
+        "propertyId": { "type": "string" },
+        "propertyTitle": { "type": "string" },
+        "sender": { "type": "string" },
+        "message": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "agentId", "message", "createdAt"]
+    },
+    "FavoriteProperty": {
+      "title": "FavoriteProperty",
+      "description": "User bookmarked property",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "propertyId": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "propertyId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Stores user profiles"
+    },
+    "/users/{userId}/saved_searches/{searchId}": {
+      "schema": "SavedSearch",
+      "description": "User saved property search alert queries"
+    },
+    "/users/{userId}/favorites/{favId}": {
+      "schema": "FavoriteProperty",
+      "description": "User bookmarked properties"
+    },
+    "/conversations/{convId}/messages/{msgId}": {
+      "schema": "ChatMessage",
+      "description": "Direct messaging chats with agents"
+    }
+  }
+}
