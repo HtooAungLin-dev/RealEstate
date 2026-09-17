@@ -1,6 +1,6 @@
 import React from 'react';
 import { X, Heart, Trash2, ArrowRight, Scale } from 'lucide-react';
-import { Property, SupportedLanguage } from '../types/property';
+import { Property, SupportedLanguage } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 
 interface ShortlistModalProps {

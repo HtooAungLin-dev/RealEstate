@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
-import { Property, SupportedLanguage } from '../types/property';
+import { Property, SupportedLanguage } from '../types/property.ts';
 import { Maximize2, LocateFixed, Layers, Train, Info } from 'lucide-react';
 import { translations } from '../i18n/translations';
 

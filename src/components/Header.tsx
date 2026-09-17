@@ -13,7 +13,7 @@ import {
   ChevronDown,
   Scale
 } from 'lucide-react';
-import { SupportedLanguage } from '../types/property';
+import { SupportedLanguage } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 
 interface HeaderProps {
@@ -140,7 +140,7 @@ export const Header: React.FC<HeaderProps> = ({
               <div className="ml-2.5">
                 <div className="flex items-baseline">
                   <span className="text-xl sm:text-2xl font-black tracking-tight text-[#1E293B]">
-                    Property<span className="text-[#E00000]">Guru</span>
+                    RealEstate<span className="text-[#E00000]">Boss</span>
                   </span>
                   <span className="ml-1 text-[10px] font-bold text-red-600 bg-red-50 border border-red-200 px-1 py-0.2 rounded">
                     SG

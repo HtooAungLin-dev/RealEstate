@@ -15,7 +15,7 @@ import {
   Sparkles,
   Scale
 } from 'lucide-react';
-import { Property, SupportedLanguage } from '../types/property';
+import { Property, SupportedLanguage } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 
 interface PropertyCardProps {
@@ -261,7 +261,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
             </button>
             <a
               href={`https://wa.me/${property.agent.whatsapp}?text=${encodeURIComponent(
-                `Hi ${property.agent.name}, I found your listing "${property.title}" on PropertyGuru Singapore and would like to find out more.`
+                `Hi ${property.agent.name}, I found your listing "${property.title}" on RealEstate Singapore and would like to find out more.`
               )}`}
               target="_blank"
               rel="noopener noreferrer"

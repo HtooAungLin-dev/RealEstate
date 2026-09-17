@@ -21,7 +21,7 @@ import {
   HelpCircle,
   ChevronDown
 } from 'lucide-react';
-import { Property, SupportedLanguage } from '../types/property';
+import { Property, SupportedLanguage } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 
 interface ComparePropertiesModalProps {
@@ -388,7 +388,7 @@ export const ComparePropertiesModal: React.FC<ComparePropertiesModalProps> = ({
                               </button>
                               <a
                                 href={`https://wa.me/${prop.agent.whatsapp}?text=${encodeURIComponent(
-                                  `Hi ${prop.agent.name}, I'm comparing "${prop.title}" on PropertyGuru Singapore.`
+                                  `Hi ${prop.agent.name}, I'm comparing "${prop.title}" on RealEstate Singapore.`
                                 )}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -824,7 +824,7 @@ export const ComparePropertiesModal: React.FC<ComparePropertiesModalProps> = ({
                             </button>
                             <a
                               href={`https://wa.me/${p.agent.whatsapp}?text=${encodeURIComponent(
-                                `Hi ${p.agent.name}, I am comparing "${p.title}" on PropertyGuru.`
+                                `Hi ${p.agent.name}, I am comparing "${p.title}" on RealEstate.`
                               )}`}
                               target="_blank"
                               rel="noopener noreferrer"

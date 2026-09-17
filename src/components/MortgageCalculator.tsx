@@ -14,7 +14,7 @@ import {
   Sparkles,
   ChevronRight
 } from 'lucide-react';
-import { Property, SupportedLanguage } from '../types/property';
+import { Property, SupportedLanguage } from '../types/property.ts';
 import { 
   SINGAPORE_BANK_PACKAGES, 
   BankRatePackage, 

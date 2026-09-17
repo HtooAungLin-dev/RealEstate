@@ -8,7 +8,7 @@ import {
   Trash2, 
   Plus 
 } from 'lucide-react';
-import { Property, SupportedLanguage } from '../types/property';
+import { Property, SupportedLanguage } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 
 interface CompareFloatingBarProps {

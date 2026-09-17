@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { signInWithPopup, signOut } from 'firebase/auth';
 import { auth, googleAuthProvider } from '../lib/firebase';
-import { SupportedLanguage } from '../types/property';
+import { SupportedLanguage } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 
 interface AuthModalProps {
@@ -98,7 +98,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             </div>
             <div>
               <h2 className="text-base font-bold text-slate-900">
-                {currentUser ? 'My PropertyGuru Account' : 'Sign in to PropertyGuru SG'}
+                {currentUser ? 'My RealEstate Account' : 'Sign in to RealEstate SG'}
               </h2>
               <p className="text-xs text-slate-500">
                 {currentUser ? 'Manage profile and saved searches' : 'Save searches, viewings, and agent chats'}

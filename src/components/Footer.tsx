@@ -1,6 +1,6 @@
 import React from 'react';
 import { Building2, ShieldCheck, Mail, Phone, ExternalLink } from 'lucide-react';
-import { SupportedLanguage } from '../types/property';
+import { SupportedLanguage } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 
 interface FooterProps {
@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
               </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed pr-6">
-              PropertyGuru Singapore is the leading real estate portal empowering property seekers with transparent pricing data, verified CEA agent listings, interactive real-time MRT maps, and intelligent search alerts.
+              RealEstate Singapore is the leading real estate portal empowering property seekers with transparent pricing data, verified CEA agent listings, interactive real-time MRT maps, and intelligent search alerts.
             </p>
             <div className="flex items-center space-x-2 text-emerald-400 font-medium text-xs pt-2">
               <ShieldCheck className="w-4 h-4" />
@@ -82,7 +82,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
 
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500">
-          <p>© {new Date().getFullYear()} PropertyGuru Singapore. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} RealEstate Singapore. All rights reserved.</p>
           <div className="flex space-x-4 mt-2 sm:mt-0">
             <span className="hover:text-slate-400 cursor-pointer">Terms of Service</span>
             <span>•</span>

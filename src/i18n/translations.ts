@@ -1,4 +1,4 @@
-import { SupportedLanguage } from '../types/property';
+import { SupportedLanguage } from '../types/property.ts';
 
 export interface TranslationDictionary {
   siteTitle: string;
@@ -162,7 +162,7 @@ export interface TranslationDictionary {
 
 export const translations: Record<SupportedLanguage, TranslationDictionary> = {
   en: {
-    siteTitle: 'PropertyGuru Singapore',
+    siteTitle: 'RealEstate Singapore',
     tagline: "Singapore's Leading Real Estate & Property Portal",
     nav: {
       buy: 'Buy',
@@ -322,7 +322,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
   },
 
   zh: {
-    siteTitle: 'PropertyGuru 新加坡',
+    siteTitle: 'RealEstate 新加坡',
     tagline: '新加坡首屈一指的房地产买卖与租赁门户',
     nav: {
       buy: '买房',
@@ -482,7 +482,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
   },
 
   ms: {
-    siteTitle: 'PropertyGuru Singapura',
+    siteTitle: 'RealEstate Singapura',
     tagline: 'Portal Hartanah Terunggul di Singapura',
     nav: {
       buy: 'Beli',
@@ -642,7 +642,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
   },
 
   ta: {
-    siteTitle: 'PropertyGuru சிங்கப்பூர்',
+    siteTitle: 'RealEstate சிங்கப்பூர்',
     tagline: 'சிங்கப்பூரின் முன்னணி ரியல் எஸ்டேட் போர்ட்டல்',
     nav: {
       buy: 'வாங்கு',

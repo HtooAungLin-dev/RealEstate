@@ -10,7 +10,7 @@ import {
   Train,
   X
 } from 'lucide-react';
-import { FilterState, SupportedLanguage, TransactionType, PropertyCategory } from '../types/property';
+import { FilterState, SupportedLanguage, TransactionType, PropertyCategory } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 import { SINGAPORE_DISTRICTS } from '../data/properties';
 

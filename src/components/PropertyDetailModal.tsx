@@ -21,7 +21,7 @@ import {
   ChevronRight,
   Scale
 } from 'lucide-react';
-import { Property, SupportedLanguage } from '../types/property';
+import { Property, SupportedLanguage } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 import { MortgageCalculator } from './MortgageCalculator';
 
@@ -196,7 +196,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
               </button>
               <a
                 href={`https://wa.me/${property.agent.whatsapp}?text=${encodeURIComponent(
-                  `Hi ${property.agent.name}, I am inquiring about "${property.title}" on PropertyGuru Singapore.`
+                  `Hi ${property.agent.name}, I am inquiring about "${property.title}" on RealEstate Singapore.`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

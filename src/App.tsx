@@ -34,7 +34,7 @@ import {
   SupportedLanguage, 
   PropertyCategory, 
   TransactionType 
-} from './types/property';
+} from './types/property.ts';
 import { SINGAPORE_PROPERTIES } from './data/properties';
 import { translations } from './i18n/translations';
 import { auth } from './lib/firebase';
@@ -303,7 +303,7 @@ export default function App() {
   const handleTriggerSimulatedAlert = (alertTitle: string) => {
     setToastAlert({
       title: `New Property Alert: ${alertTitle}`,
-      message: 'A brand new high-floor unit matching your alert was just listed on PropertyGuru Singapore!',
+      message: 'A brand new high-floor unit matching your alert was just listed on RealEstate Singapore!',
     });
     setTimeout(() => setToastAlert(null), 6000);
   };

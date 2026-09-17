@@ -1,6 +1,6 @@
 import React from 'react';
 import { X, Check, RotateCcw } from 'lucide-react';
-import { FilterState, SupportedLanguage, TenureType, FurnishingType } from '../types/property';
+import { FilterState, SupportedLanguage, TenureType, FurnishingType } from '../types/property.ts';
 import { SINGAPORE_DISTRICTS, SINGAPORE_MRT_LINES } from '../data/properties';
 import { translations } from '../i18n/translations';
 

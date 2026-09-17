@@ -10,7 +10,7 @@ import {
   Phone,
   Paperclip
 } from 'lucide-react';
-import { Property, ChatMessage, SupportedLanguage } from '../types/property';
+import { Property, ChatMessage, SupportedLanguage } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 
 interface DirectMessagingDrawerProps {

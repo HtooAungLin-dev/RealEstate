@@ -10,7 +10,7 @@ import {
   Mail,
   Smartphone
 } from 'lucide-react';
-import { FilterState, SavedSearch, SupportedLanguage } from '../types/property';
+import { FilterState, SavedSearch, SupportedLanguage } from '../types/property.ts';
 import { translations } from '../i18n/translations';
 
 interface SavedSearchModalProps {
